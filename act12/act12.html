@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alphabet Array Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Alphabet Array Generator</h2>
+   
+    <select id="letterCount">
+      <script>
+        for (let i = 1; i <= 26; i++) {
+          document.write(`<option value="${i}">${i}</option>`);
+        }
+      </script>
+    </select>
+ 
+    <button onclick="generate()">Generate</button>
+    <button onclick="clear()">Clear</button>
+   
+    <p id="result">Generated Array: []</p>
+  </div>
+ 
+ 
+</body>
+</html>
+ 
+ 
